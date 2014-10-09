@@ -13,5 +13,7 @@ var text = 2;            //2 bytes per unicode character on average
 var video = 100000000;   //assuming 100MB per minute of video @ 720p and 17 mbps
 //-----total space used calc-----
 var total = numImages * image + numText * text + nMinVideos * video;
+var totalk = total /1000000;
+var totalg = totalk /1000;
 //----printing----
-console.log(numImages +" small images, " + numText + " unicode characters, and "+ nMinVideos +" minutes of 720p video takes up about " +total+" bytes of space" );
+console.log(numImages +" small images, " + numText + " unicode characters, and "+ nMinVideos +" minutes of 720p video takes up about " +total+" bytes of space, or "+ totalk+" KB of space, which is " +totalg+" GB.");
