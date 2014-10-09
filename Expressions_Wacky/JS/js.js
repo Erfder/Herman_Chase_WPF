@@ -13,3 +13,10 @@ damage = userStr - mobDef;
 userDamage = mobStr - userDef;
 mobHp -= damage;
 userHp -= userDamage;
+
+function imgRest() {
+
+}
+function clickDamage(){
+
+}
