@@ -11,12 +11,17 @@ var damage;
 var userDamage;
 damage = userStr - mobDef;
 userDamage = mobStr - userDef;
-mobHp -= damage;
-userHp -= userDamage;
 
-function imgRest() {
-
-}
 function clickDamage(){
+    if(mobHp > 0){
+        mobHp-= damage;
+        userHp -= userDamage;
+        console.log("You hit the monster for " + damage + " damage! It now has " + mobHp + " Hp.");
+        console.log("The monster hit you back for " + userDamage + " Hp! You now have " + userHp + " Hp.")
+    }
+    else{
+        console.log("You defeated the monster!");
+        document.getElementById('mob').style.display='none';
+    }
 
 }
