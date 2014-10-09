@@ -12,5 +12,5 @@ var areaCFt = lengthCIn * widthCIn / 144;   //converts to area in sq feet
 var Can1 = q1 * feetPerTube / areaCFt;
 var Can2 = q2 * feetPerTube / areaCFt;   //calculates how many canvases all the tubes of a certain color will fill
 var Can0 = q0 * feetPerTube / areaCFt;
-var allCan = redCan + yelCan + bluCan;      //calculates how many canvases all the paint together will fill
+var allCan = Can0 + Can1 + Can2;      //calculates how many canvases all the paint together will fill
 console.log("My " + color[0] + " paint will cover " + Can0 + " canvases, the " + color[1] + " paint will cover " + Can1 + " canvases, and the " + color[2] + " will cover "+ Can2 + " canvases, for a total of " + allCan + " painted canvases.");        //prints
