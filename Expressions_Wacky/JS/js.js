@@ -8,3 +8,8 @@ var mobHp = 20;
 var mobDef = 1;
 var mobStr = 3;
 var damage;
+var userDamage;
+damage = userStr - mobDef;
+userDamage = mobStr - userDef;
+mobHp -= damage;
+userHp -= userDamage;
