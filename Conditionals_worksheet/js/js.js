@@ -36,3 +36,18 @@ function auth(){
         console.log("User not found. Try again.")
     }
 }
+
+
+//Group 3 Movie ticket price
+//user input defines these declared vars
+var time = prompt("Reviewing eligibility for discount movie ticket price. \nEnter the movie start time in hours as a whole number.");
+var age = prompt("What is your age");
+
+//checks conditions for discounted prices
+if(age < 10 || age > 55){
+    console.log("Your movie price is $7");
+}else if(time >=3 && time <= 5){
+    console.log("Your movie price is $7");
+}else{
+    console.log("Your movie price is $12");
+}
