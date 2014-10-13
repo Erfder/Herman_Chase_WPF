@@ -2,12 +2,12 @@
  * Created by chase on 10/9/14.
  */
 var color = ["blue","red","yellow"];        //declaring string array
-var q0 = 5;
-var q1 = 6;         //declaring vars, particularly how many small tubes of paint I own. corresponds to array
-var q2 = 3;
-var feetPerTube = 5; //how many square feet of paint is in a tube
-var lengthCIn = 12; //declares length of Canvas in inches
-var widthCIn = 24;  //width in inches
+var q0 = prompt("how many tubes of "+color[0]+" do you have?");
+var q1 = prompt("how many tubes of "+color[1]+" do you have?");         //declaring vars, particularly how many small tubes of paint I own. corresponds to array
+var q2 = prompt("how many tubes of "+color[2]+" do you have?");
+var feetPerTube = 5; //how many square feet of paint is in a tube. this is an average i suppose, as not many people readily know this quantity to enter it
+var lengthCIn = prompt("how long is the canvas you wish to paint in inches?"); //declares length of Canvas in inches
+var widthCIn = prompt("how wide is the canvas you wish to paint in inches?");  //width in inches
 var areaCFt = lengthCIn * widthCIn / 144;   //converts to area in sq feet
 var Can1 = q1 * feetPerTube / areaCFt;
 var Can2 = q2 * feetPerTube / areaCFt;   //calculates how many canvases all the tubes of a certain color will fill

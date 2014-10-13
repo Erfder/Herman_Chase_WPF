@@ -1,6 +1,7 @@
 /**
  * Created by chase on 10/9/14.
  */
+var name = prompt("Enter your name");
 var userHp = 10;
 var userDef = 2;
 var userStr = 5;
@@ -16,8 +17,8 @@ function clickDamage(){             //function from the html on mouse down
     if(mobHp > 1){                  //if mobHp > 1 do the following
         mobHp-= damage;             //calculating damage
         userHp -= userDamage;
-        console.log("You hit the monster for " + damage + " damage! It now has " + mobHp + " Hp.");     //printing
-        console.log("The monster hit you back for " + userDamage + " Hp! You now have " + userHp + " Hp.")
+        console.log(name +" hit the monster for " + damage + " damage! It now has " + mobHp + " Hp.");     //printing
+        console.log("The monster hit " + name + " back for " + userDamage + " Hp! You now have " + userHp + " Hp.")
     }
     else{
         console.log("You defeated the monster! +5 xp!");       //case where hp < 1
