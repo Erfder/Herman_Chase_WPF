@@ -4,6 +4,7 @@
 var fear = 0;
 var hatBonus = 0.5;
 var movies = 0;
+var total;
 function check(){
     if(document.getElementById("fear").value <= 4){
         fear += 10
@@ -30,4 +31,6 @@ function check(){
     }else{
         alert("you did not enter an appropriate value in the third box")
     }
+    total = fear * 3 + movies * 2 + hatBonus;
+    console.log("Your chance of survival is " + total + "%");
 }
