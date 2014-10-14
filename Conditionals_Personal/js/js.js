@@ -8,6 +8,7 @@ var wakem = 0;
 var timeE;
 var timeW;
 var timeR;
+var poss;
 function start(){
     if(isNaN(document.getElementById("hours").value) === true){
         alert("You did not enter a number");
@@ -47,10 +48,7 @@ function start(){
     timeE = hours + minutes / 60;
     timeW = wakeh + wakem / 60;
     timeR = 14 - timeW;
-    if(timeR >= timeE) {
-        console.log("You have enough time to do this")
-    }else{
-        console.log("You do not have enough time to do this");
-    }
+    poss = (timeR >= timeE) ? "You have enough time to do this" : "You do not have enough time to do this";
+    console.log(poss);
 }
 
