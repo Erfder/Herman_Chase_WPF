@@ -13,7 +13,8 @@ function check() {
     } else if (document.getElementById("fear").value >= 9) {
         fear += .33
     } else {
-        alert("you did not enter an appropriate value in the first box")
+        alert("You did not enter an appropriate value in at least one box");
+        return;
     }
     if(document.getElementById("movies").value >= 10) {
         movies += 10
@@ -22,14 +23,16 @@ function check() {
     }else if(document.getElementById("movies").value <= 3){
         movies += .5
     }else{
-        alert("you did not enter an appropriate value in the second box")
+        alert("You did not enter an appropriate value in at least one box");
+        return;
     }
     if(document.getElementById("tinfoil").value == "yes"){
         hatBonus += 50
     }else if(document.getElementById("tinfoil").value == "no"){
         hatBonus = 0
     }else{
-        alert("you did not enter an appropriate value in the third box")
+        alert("You did not enter an appropriate value in the third box. This is case sensitive, so \"yes\" (correct) is different than \"Yes\"");
+        return;
     }
     total = fear * 3 + movies * 2 + hatBonus;
     console.log("Your chance of survival is " + total + "%");
