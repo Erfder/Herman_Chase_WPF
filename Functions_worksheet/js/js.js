@@ -1,8 +1,8 @@
 /**
  * Created by chase on 10/20/14.
  */
-circumference(); //invokes the function
+circumference(radius); //invokes the function
 var radius; //sets radius var
-function circumference(){ //the actual function
+function circumference(r){ //the actual function
 
 }
