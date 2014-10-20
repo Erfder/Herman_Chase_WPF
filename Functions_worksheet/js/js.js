@@ -17,3 +17,8 @@ function stung(s){ //the function
     return s * 8.666667; //the equation
 }
 console.log("It takes " + stings + " bee stings to kill this animal."); //prints to console
+
+/*
+var stings = function(s){
+if the above was an anonymous function
+ */
