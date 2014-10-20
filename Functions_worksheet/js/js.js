@@ -11,7 +11,7 @@ console.log("The circumference is of the circle is " + circ);
 
 
 
-var weight = 20; //sets vars
+var weight = 30; //sets vars
 var stings = stung(weight); //sets var to whatever the function outputs also invokes function.
 function stung(s){ //the function
     return s * 8.666667; //the equation
