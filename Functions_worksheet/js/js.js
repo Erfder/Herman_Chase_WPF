@@ -4,5 +4,5 @@
 circumference(radius); //invokes the function
 var radius; //sets radius var
 function circumference(r){ //the actual function
-
+    area = r * 3.14; //code for the calculation
 }
