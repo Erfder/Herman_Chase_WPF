@@ -13,6 +13,6 @@ console.log("The circumference is of the circle is " + circ);
 
 var weight = 20; //sets vars
 var stings = stung(weight); //sets var to whatever the function outputs
-function stung(s){
-    return s * 8.666667
+function stung(s){ //the function
+    return s * 8.666667; //the equation
 }
