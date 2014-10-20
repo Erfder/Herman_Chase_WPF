@@ -5,6 +5,7 @@ circumference(radius); //invokes the function
 var radius; //sets radius var
 function circumference(r){ //the actual function
     calc = r * 3.14 * 2; //code for the calculation
-    return area;
+    return calc;
 }
-var area = circumference();
+var circ = circumference();
+console.log("The circumference is of the circle is " + circ);
