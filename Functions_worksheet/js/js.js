@@ -8,3 +8,8 @@ function circumference(r){ //the actual function
 }
 var circ = circumference(radius); //invokes function and assigns it to a var
 console.log("The circumference is of the circle is " + circ);
+
+
+
+var weight = 20;
+var stings = stung();
