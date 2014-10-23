@@ -12,3 +12,5 @@ var area = function(x,y){
        y = parseInt(sH);
     }
 };
+area(sW,sH);
+console.log(area());
