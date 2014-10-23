@@ -1,5 +1,7 @@
 /**
  * Created by chase on 10/23/14.
  */
-var xan = prompt("Enter a number");
-(isNaN(xan)) ? console.log("Letter") : console.log("Number");
+var sW = prompt("Enter the width of your screen");
+var sH = prompt("Enter the height of your screen");
+parseInt(sW);
+parseInt(sH);
