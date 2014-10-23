@@ -10,16 +10,17 @@ var area = function(x,y){
     }else{
        x = parseInt(sW);
        y = parseInt(sH);
+       return x * y;
     }
 };
 area(sW,sH);
-var areaP = function(c,v){
+var areaP = function(c){
     if(isNaN(ppi)){
         alert("you did not enter a number")
     }else {
         c = parseInt(ppi);
-        return v * c * c;
+        return c * c;
     }
 };
-areaP(ppi,area());
-console.log(area());
+areaP(ppi);
+console.log("Your screen area is " + area() + " square inches, which is " + area() * areaP() + " pixels using your entered ppi of " + ppi + ".");
