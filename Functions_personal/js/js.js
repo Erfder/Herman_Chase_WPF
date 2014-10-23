@@ -2,10 +2,10 @@
  * Created by chase on 10/23/14.
  */
 var m = 0;
-var a = 0;
+var a = 0; //declares vars PREPARE FOR UGLY CODING. It is written logically but I can't think of many ways to condense it. We haven't learned too much so this is really just an unruly process of elimination with if statements
 var n = 0;
-function resolve() {
-    if (document.getElementById("syes").checked == true) {
+function resolve() { //when button is pushed
+    if (document.getElementById("syes").checked == true) {      //all the code until the nxt comment identifies what boxes are checked
         m++
     } else {
         m += 0
@@ -36,8 +36,8 @@ function resolve() {
         n++
     } else {
         m += 0
-    }
-    if(m > 0){
+    }                                                                   //end identification
+    if(m > 0){ //begins to compare where things are and make suggestions
         if(m > 1){ //if m is 2+
             if((a == 1 && n >= 1) || (a >= 1 && n == 1)){
                 console.log("You are doing too much today. Cancel with friends.")
