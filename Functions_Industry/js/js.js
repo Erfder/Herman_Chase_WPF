@@ -3,5 +3,10 @@
  */
 var sW = prompt("Enter the width of your screen");
 var sH = prompt("Enter the height of your screen");
-parseInt(sW);
-parseInt(sH);
+if(isNaN(sW) || isNaN(sH)){
+    alert("you did not enter a number");
+}else{
+    parseInt(sW);
+    parseInt(sH)
+}
+
