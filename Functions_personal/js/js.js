@@ -39,7 +39,11 @@ function resolve() {
     }
     if(m > 0){
         if(m > 1){ //if m is 2+
-            console.log("You are doing too many things in the morning. Procrastinate schoolwork until tomorrow or move something to another time in the day")
+            if((a == 1 && n >= 1) || (a >= 1 && n == 1)){
+                console.log("You are doing too much today. Cancel with friends.")
+            }else {
+                console.log("You are doing too many things in the morning. Procrastinate schoolwork until tomorrow or move something to another time in the day")
+            }
         }else{//if morning is 1
             if(a > 0){
                 if(a > 1){
