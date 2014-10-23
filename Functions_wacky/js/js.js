@@ -9,4 +9,7 @@ var serv = prompt("Enter the number of servings of that food you have.");
 (isNaN(weight)) ? alert("you did not enter a number for animal weight"): weight = parseInt(weight);
 (isNaN(fW)) ? alert("you did not enter a number for food weight"): fW = parseInt(fW);
 (isNaN(serv)) ? alert("you did not enter a number for the number of servings you have"): serv = parseInt(serv);
-
+function feed(x,y,z){
+    
+}
+feed(weight,fW,serv);
